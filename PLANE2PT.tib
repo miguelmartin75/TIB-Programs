@@ -1,0 +1,33 @@
+Disp "ENTER PLANE EQ"
+Disp "IN THE FORM:"
+Disp "AX + BX + CZ = D"
+Pause
+
+Input "ENTER A ", A
+Input "ENTER B ", B
+Input "ENTER C ", C
+Input "ENTER D ", D
+Disp "ENTER POINT"
+Disp "(X, Y, Z)"
+Pause
+
+Input "ENTER X ", X
+Input "ENTER Y ", Y
+Input "ENTER Z ", Z
+
+(abs(AX+BY+CZ-D)/SQRT(A^2+B^2+C^2))->S
+(D-AX-BY-CZ)/(A^2+B^2+C^2)->T
+ClrHome
+
+Disp "SHORTEST DIST"
+Disp "SQRT OF"
+S^2>Frac
+Disp "OR", S
+Pause
+
+Disp "FOOT PT"
+Disp "X", X+TA
+Disp "Y", Y+TB
+Disp "Z", Z+TC
+Pause
+
